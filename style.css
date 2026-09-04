@@ -1,0 +1,1234 @@
+/* ================================
+   ตั้งค่าพื้นฐาน
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    background: #eef2f7;
+    color: #333;
+    padding: 20px;
+}
+
+
+/* ================================
+   Browser
+================================ */
+
+.browser {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   Browser Bar
+================================ */
+
+.browser-bar {
+    height: 28px;
+    background: #17245d;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red {
+    background: #ff6b6b;
+}
+
+.yellow {
+    background: #ffd93d;
+}
+
+.green {
+    background: #6bcB77;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+header {
+    height: 65px;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+}
+
+.logo {
+    color: #142b85;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2463e9;
+}
+
+
+/* ================================
+   Hero
+================================ */
+
+.hero {
+    min-height: 270px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 30px 80px;
+
+    background: linear-gradient(
+        110deg,
+        #b36bea,
+        #685ce6,
+        #2187ed
+    );
+
+    color: white;
+}
+
+
+/* รูป Profile */
+
+.profile-image {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ข้อความ Hero */
+
+.hero-text {
+    margin-left: 60px;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.line {
+    width: 45px;
+    height: 3px;
+
+    background: white;
+
+    margin: 12px 0;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.65;
+    font-weight: 300;
+}
+
+
+/* ดาวตกแต่ง */
+
+.star {
+    position: absolute;
+    opacity: 0.15;
+    color: white;
+}
+
+.star1 {
+    right: 130px;
+    top: 55px;
+    font-size: 35px;
+}
+
+.star2 {
+    right: 80px;
+    bottom: 45px;
+    font-size: 25px;
+}
+
+
+/* ================================
+   Information Cards
+================================ */
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+    background: #fafafa;
+}
+
+.card {
+    border: 1px solid #e1e4eb;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    background: white;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blue-title {
+    color: #3156c8;
+}
+
+.orange-title {
+    color: #f2a900;
+}
+
+.green-title {
+    color: #20a35b;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    font-size: 14px;
+    margin: 9px 0;
+
+    line-height: 1.5;
+}
+
+.card li i {
+    width: 18px;
+    text-align: center;
+    color: #3156c8;
+}
+
+
+/* Skills */
+
+.skills li {
+    position: relative;
+    padding-left: 18px;
+}
+
+.skills li::before {
+    content: "•";
+
+    position: absolute;
+    left: 0;
+
+    color: #e96c91;
+    font-size: 20px;
+}
+
+
+/* ================================
+   Social Media
+================================ */
+
+.social {
+    padding: 5px 20px 20px;
+    background: #fafafa;
+}
+
+.social h3 {
+    font-size: 18px;
+    margin: 0 0 8px 30px;
+}
+
+.social-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: white;
+
+    border: 1px solid #e1e4eb;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.social-item {
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+    color: #222;
+
+    border-right: 1px solid #e5e5e5;
+
+    transition: 0.3s;
+}
+
+.social-item:last-child {
+    border-right: none;
+}
+
+.social-item i {
+    font-size: 28px;
+}
+
+.social-item:hover {
+    background: #f2f5ff;
+    transform: translateY(-2px);
+}
+
+.instagram i {
+    color: #e1306c;
+}
+
+.facebook i {
+    color: #1877f2;
+}
+
+.twitter i {
+    color: #1da1f2;
+}
+
+.github i {
+    color: #111;
+}
+
+.social-item span {
+    font-size: 14px;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        90deg,
+        #293de0,
+        #2133c8
+    );
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+    .social-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .social-item {
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    header {
+        height: auto;
+        padding: 15px;
+
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero {
+        padding: 25px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 27px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .social-container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-item {
+        border-right: none;
+    }
+
+}
+/* =================================
+   ABOUT PAGE
+================================= */
+
+.about-hero {
+    min-height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        110deg,
+        #b36bea,
+        #685ce6,
+        #2187ed
+    );
+
+    color: white;
+}
+
+.about-title h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.about-title p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* =================================
+   About Content
+================================= */
+
+.about-content {
+    display: flex;
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 50px 80px;
+
+    background: white;
+}
+
+
+/* รูปภาพ */
+
+.about-image {
+    width: 280px;
+    height: 280px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 7px solid #eee;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ข้อความ */
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #3156c8;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+.about-text h3 {
+    color: #555;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+
+/* =================================
+   About Cards
+================================= */
+
+.about-info {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 10px 50px 40px;
+
+    background: #fafafa;
+}
+
+.about-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e1e4eb;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-card i {
+    font-size: 38px;
+
+    color: #5b5ce2;
+
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: #333;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================
+   My Goal
+================================= */
+
+.my-goal {
+    margin: 0;
+
+    padding: 35px 80px;
+
+    text-align: center;
+
+    background: white;
+}
+
+.my-goal h2 {
+    color: #3156c8;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.my-goal h2 i {
+    color: #f2a900;
+}
+
+.my-goal p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================
+   Active Menu
+================================= */
+
+nav a.active {
+    color: #3156c8;
+
+    font-weight: 600;
+}
+
+nav a.active::after {
+    content: "";
+
+    display: block;
+
+    width: 100%;
+
+    height: 2px;
+
+    margin-top: 3px;
+
+    background: #3156c8;
+
+    border-radius: 5px;
+}
+
+
+/* =================================
+   About Responsive
+================================= */
+
+@media (max-width: 800px) {
+
+    .about-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 30px;
+
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+
+        padding: 20px 30px 40px;
+    }
+
+    .my-goal {
+        padding: 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .about-title h1 {
+        font-size: 32px;
+    }
+
+    .about-title p {
+        font-size: 15px;
+    }
+
+    .about-content {
+        padding: 30px 20px;
+    }
+
+    .about-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text h3 {
+        font-size: 19px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+}
+/* =================================
+   HOBBIES PAGE
+================================= */
+
+.hobbies-hero {
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(
+        110deg,
+        #b36bea,
+        #685ce6,
+        #2187ed
+    );
+}
+
+.hobbies-hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.hobbies-hero p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* =================================
+   HOBBIES CARDS
+================================= */
+
+.hobbies-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding: 40px 50px;
+
+    background: #fafafa;
+}
+
+.hobby-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 30px 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e3e5eb;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Icon */
+
+.hobby-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #b36bea,
+        #4e74e8
+    );
+
+    color: white;
+
+    font-size: 30px;
+}
+
+.hobby-card h2 {
+    color: #3156c8;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================
+   QUOTE
+================================= */
+
+.hobby-quote {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: white;
+}
+
+.hobby-quote i {
+    font-size: 30px;
+
+    color: #b36bea;
+
+    margin-bottom: 10px;
+}
+
+.hobby-quote p {
+    color: #555;
+
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+
+/* =================================
+   HOBBIES RESPONSIVE
+================================= */
+
+@media (max-width: 800px) {
+
+    .hobbies-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .hobbies-hero h1 {
+        font-size: 32px;
+    }
+
+    .hobbies-hero p {
+        font-size: 15px;
+    }
+
+    .hobbies-container {
+        grid-template-columns: 1fr;
+
+        padding: 25px 20px;
+    }
+
+}
+/* =================================
+   CONTACT PAGE
+================================= */
+
+.contact-hero {
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(
+        110deg,
+        #b36bea,
+        #685ce6,
+        #2187ed
+    );
+}
+
+.contact-hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.contact-hero p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* =================================
+   Contact Content
+================================= */
+
+.contact-content {
+    padding: 40px 60px;
+
+    background: #fafafa;
+}
+
+.contact-title {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.contact-title h2 {
+    color: #3156c8;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+.contact-title h2 i {
+    color: #b36bea;
+}
+
+.contact-title p {
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* =================================
+   Contact Cards
+================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.contact-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    position: relative;
+
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #e1e4eb;
+
+    border-radius: 15px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Icon */
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f1f3f8;
+
+    font-size: 28px;
+}
+
+.instagram .contact-icon {
+    color: #e1306c;
+}
+
+.facebook .contact-icon {
+    color: #1877f2;
+}
+
+.twitter .contact-icon {
+    color: #111;
+}
+
+.tiktok .contact-icon {
+    color: #111;
+}
+
+.email .contact-icon {
+    color: #e74c3c;
+}
+
+.phone .contact-icon {
+    color: #20a35b;
+}
+
+
+/* ข้อความ */
+
+.contact-card h3 {
+    font-size: 19px;
+
+    margin-bottom: 3px;
+}
+
+.contact-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ลูกศร */
+
+.contact-card .arrow {
+    position: absolute;
+
+    right: 20px;
+
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+
+/* =================================
+   Bottom
+================================= */
+
+.contact-bottom {
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+}
+
+.contact-bottom a {
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    border-radius: 25px;
+
+    background: #3156c8;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.contact-bottom a:hover {
+    background: #213da3;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   Responsive
+================================= */
+
+@media (max-width: 700px) {
+
+    .contact-content {
+        padding: 30px 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-hero p {
+        font-size: 15px;
+    }
+
+}
